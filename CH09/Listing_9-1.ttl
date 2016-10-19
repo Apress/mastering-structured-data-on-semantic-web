@@ -1,0 +1,57 @@
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix ex: <http://example.com> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@base <http://example.com/base/> .
+
+<TriplesMap1>
+  a rr:TriplesMap;
+  
+  rr:logicalTable [ rr:tableName "\"Employee\""; ] ;
+  
+  rr:subjectMap [ rr:template "http://example.com/employee/{\"\ID\"}"; ];
+  
+  rr:predicateObjectMap
+  [
+    rr:preficate        ex:firstName ;
+	rr:objectMap    [ rr:column "\"FirstName\"" ]
+  ];
+  
+  rr:predicateObjectMap
+  [
+    rr:predicate        ex:lastName ;
+	rr:objectMap    [  rr:column "\"LastName\"" ]
+  ]
+  .
+  
+<TripleMap2>
+  a rr:TriplesMap;
+  
+  rr:logicalTable [ rr:tableName "\"Project\""; ] ;
+  
+  rr:subjectMap [ rr:template "http://example.com/project/{\"\ID\"}"; ];
+  
+  rr:predicateObjectMap
+  [
+    rr:preficate        ex:id ;
+	rr:objectMap    [ rr:column "\"ID\"" ]
+  ];
+  
+  rr:predicateObjectMap
+  [
+    rr:predicate        ex:description ;
+	rr:objectMap    [  rr:column "\"Description\"" ]
+  ]
+  .  
+
+<linkMap_1_2>
+  a rr:TriplesMap;
+  
+  rr:logicalTable [ rr:tableName "\"Employee_Project\""; ] ;
+  
+  rr:subjectMap [ rr:template "http://example.com/employee/{\"\ID_Employee\"}"; ];
+  
+  rr:predicateObjectMap
+  [
+    rr:preficate        ex:involvedIn ;
+	rr:objectMap    [ rr:template "http://example.com/project/{\"ID_Project\"}" ];
+  ] .  

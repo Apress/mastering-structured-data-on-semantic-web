@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<title>Microdata Annotation Example</title>
+	</head>
+	<body>
+		<p>
+		Listing 8-4. Local Business Annotated with Microdata
+		</p>
+
+		<div itemscope="itemscope" itemtype="http://schema.org/LocalBusiness">
+		  <h1><span itemprop="name">The Blue Cafe</span></h1>
+		  <span itemprop="description">A nice cafe the beach with a friendly atmosphere.</span>
+		  <div itemprop="address" itemscope="itemscope" itemtype="http://schema.org/PostalAddress">
+			<span itemprop="streetAddress">123 Esplanade</span>
+			<span itemprop="addressLocality">Nice Beach</span>,
+			<span itemprop="addressRegion">CA</span>
+		  </div>
+		  <p>
+		   Phone: <span itemprop="telephone">123-456-7890</span>
+		  </p>
+		</div>
+
+	</body>
+</html>

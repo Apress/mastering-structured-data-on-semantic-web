@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<title>HTML5 Microdata</title>
+	</head>
+	<body>
+	
+		<!-- Listing 2-31. A Person’s Description in HTML5 Microdata -->
+
+		<div itemscope="itemscope" itemtype="http://schema.org/Person">
+		  <span itemprop="name">Leslie Sikos</span>
+		  <img src="lesliesikos.jpg" alt="Leslie Sikos" itemprop="image" />
+		  Leslie’s web site:
+		  <a href="http://www.lesliesikos.com" itemprop="url">lesliesikos.com</a>
+		</div>
+
+		<!-- Listing 2-32. The Description of a Book in HTML5 Microdata -->
+
+		<div itemscope="itemscope" itemtype="http://schema.org/Book"
+		  itemid="urn:isbn: 978-1-484208-84-7">
+		  <img itemprop="image" src="http://www.masteringhtml5css3.com/img/webstandardsbook.jpg" alt="Web Standards" />
+		  <span itemprop="name">Web Standards: Mastering HTML5, CSS3, and XML</span>
+		  by <a itemprop="author" href="http://www.lesliesikos.com">Leslie Sikos</a>
+		</div>
+
+
+		<!-- Listing 2-33. Nesting a Group of Name-Value Pairs -->
+
+		<div itemscope="itemscope">
+		  <p>Name: <span itemprop="name">Herbie Hancock</span></p>
+		  <p>Band: <span itemprop="band" itemscope="itemscope"> 
+					 <span itemprop="name">The Headhunters</span> 
+					(<span itemprop="size">7</span> members)
+				  </span>
+		  </p>
+		</div>
+
+		<!-- Listing 2-34. Using itemref -->
+
+		<div itemscope="itemscope" id="herbie" itemref="a b"></div>
+		<p id="a">Name: <span itemprop="name">Herbie Hancock</span></p>
+		<div id="b" itemprop="band" itemscope="itemscope" itemref="c"></div>
+		<div id="c">
+		  <p>Band: <span itemprop="name">The Headhunters</span></p>
+		  <p>Size: <span itemprop="size">7</span> members</p>
+		</div>
+
+	</body>
+</html>

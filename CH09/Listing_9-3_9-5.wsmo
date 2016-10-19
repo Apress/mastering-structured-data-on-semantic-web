@@ -1,0 +1,52 @@
+<!-- Listing 9-3. Defining the Service Goal -->
+
+goal _"http://www.example.com/successfulBooking"
+  capability
+    postcondition
+      definedBy
+        ?tripReservation memberOf tr#reservation[
+           customer hasValue fof#Leslie,
+           origin hasValue loc#adelaide,
+           destination hasValue loc#bali,
+           travel hasValue ?flight,
+           accommodation hasValue ?Hotel
+           payment hasValue tr#creditcard
+        ] and
+        ?flight[airline hasValue tr#staralliance] memberOf tr#flight and 
+        ?hotel[name hasValue "Tropical Paradise Hotel"] memberOf tr#hotel .
+
+<!-- Listing 9-4. Pre-State Capability Description -->
+
+capability DREAMHOLIDAYScapability
+ sharedVariables {?creditCard, ?initialBalance, ?item, ?passenger}
+ precondition
+  definedBy
+   ?reservationRequest[
+        reservationItem hasValue ?item,
+        passenger hasValue ?passenger,
+        payment hasValue ?creditcard,
+      ] memberOf tr#reservationRequest and
+     ((?item memberOf tr#trip) or (?item memberOf tr#ticket)) and
+     ?creditCard[balance hasValue ?initialBalance] memberOf po#creditCard.
+
+ assumption
+  definedBy
+   po#validCreditCard(?creditCard) and
+   (?creditCard[type hasValue po#visa] or ?creditCard[type hasValue po#mastercard]).
+
+<!-- Listing 9-5. Post-State Capability Description -->
+
+postcondition
+       definedBy
+          ?reservation[
+               reservationItem hasValue ?item,
+               customer hasValue ?passenger,
+               payment hasValue ?creditcard 
+           ] memberOf tr#reservation . 
+
+    assumption
+       definedBy
+         reservationPrice(?reservation, "AUD", ?tripPrice) and
+          ?finalBalance= (?initialBalance - ?ticketPrice) and
+          ?creditCard[po#balance  hasValue  ?finalBalance] .
+   

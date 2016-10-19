@@ -1,0 +1,77 @@
+<process:AtomicProcess rdf:ID="Purchase">
+   <process:hasInput>
+      <process:Input rdf:ID="ObjectPurchased" />
+   </process:hasInput>
+   <process:hasInput>
+      <process:Input rdf:ID="PurchaseAmt" />
+   </process:hasInput>
+   <process:hasInput>
+      <process:Input rdf:ID="CreditCard" />
+   </process:hasInput>
+   <process:hasOutput>
+      <process:Output rdf:ID="ConfirmationNum" />
+   </process:hasOutput>
+   <process:hasResult>
+     <process:Result>
+        <process:hasResultVar>
+           <process:ResultVar rdf:ID="CreditLimH">
+              <process:parameterType rdf:resource="&ecom;#Dollars" />
+           </process:ResultVar>
+        </process:hasResultVar>
+        <process:inCondition>
+          <expr:KIF-Condition>
+            <expr:expressionBody>
+              (and (current-value (credit-limit ?CreditCard)
+                                  ?CreditLimH)
+                   (>= ?CreditLimH ?purchaseAmt))
+            </expr:expressionBody>
+          </expr:KIF-Condition>
+        </process:inCondition>
+        <process:withOutput>
+           <process:OutputBinding>
+              <process:toParam rdf:resource="#ConfirmationNum" />
+              <process:valueFunction rdf:parseType="Literal">
+                 <cc:ConfirmationNum xsd:datatype="&xsd;#string" />
+              </process:valueFunction>
+           </process:OutputBinding>
+        </process:withOutput>
+        <process:hasEffect>
+          <expr:KIF-Condition>
+            <expr:expressionBody>
+              (and (confirmed (purchase ?purchaseAmt) ?ConfirmationNum)
+                   (own ?objectPurchased)
+                   (decrease (credit-limit ?CreditCard)
+                             ?purchaseAmt))
+            </expr:expressionBody>
+          </expr:KIF-Condition>
+        </process:hasEffect>
+     </process:Result>
+     <process:Result>
+        <process:hasResultVar>
+           <process:ResultVar rdf:ID="CreditLimL">
+              <process:parameterType rdf:resource="&ecom;#Dollars" />
+           </process:ResultVar>
+        </process:hasResultVar>
+        <process:inCondition>
+          <expr:KIF-Condition>
+            <expr:expressionBody>
+              (and (current-value (credit-limit ?CreditCard)
+                                  ?CreditLimL)
+                   (< ?CreditLimL ?purchaseAmt))
+            </expr:expressionBody>
+          </expr:KIF-Condition>
+        </process:inCondition>
+        <process:withOutput rdf:resource="&ecom;failureNotice" />
+           <process:OutputBinding>
+              <process:toParam rdf:resource="#ConfirmationNum" />
+              <process:valueData rdf:parseType="Literal">
+                 <drs:Literal>
+                    <drs:litdefn xsd:datatype="&xsd;#string"
+                                 >00000000</drs:litdefn>
+                 </drs:Literal>
+              </process:valueData>
+           </process:OutputBinding>
+        </process:withOutput>
+     </process:Result>
+   </process:hasResult>
+</process:AtomicProcess>

@@ -1,0 +1,338 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rdf:RDF
+   xmlns:dbpedia-owl="http://dbpedia.org/ontology/"
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:dcterms="http://purl.org/dc/terms/"
+   xmlns:doco="http://purl.org/spar/doco/"
+   xmlns:fabio="http://purl.org/spar/fabio/"
+   xmlns:foaf="http://xmlns.com/foaf/0.1/"
+   xmlns:gr="http://purl.org/goodrelations/v1#"
+   xmlns:iswc="http://annotation.semanticweb.org/iswc/iswc.daml#"
+   xmlns:owl="http://www.w3.org/2002/07/owl#"
+   xmlns:pso="http://purl.org/spar/pso"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+   xmlns:schema="http://schema.org/"
+   xmlns:void="http://rdfs.org/ns/void#"
+   xmlns:wv="http://vocab.org/waive/terms/"
+>
+  <void:Dataset rdf:about="http://www.lesliesikos.com/datasets/sikos.rdf">
+	<owl:sameAs rdf:resource="http://datahub.io/dataset/lesliesikos" /> 
+    <rdf:type rdf:resource="http://schema.org/dataset" />
+    <foaf:homepage rdf:resource="http://www.lesliesikos.com" />
+	<dcterms:title>LOD Dataset of Leslie Sikos</dcterms:title>
+	<dcterms:description>LOD Dataset of Computer Scientist Leslie F. Sikos, Ph.D.</dcterms:description>
+	<dcterms:publisher rdf:resource="http://dbpedia.org/resource/Leslie_Sikos" />
+	<dcterms:subject rdf:resource="http://dbpedia.org/resource/Leslie_Sikos" />
+	<void:vocabulary rdf:resource="http://www.w3.org/2000/10/swap/pim/contact#" />
+	<void:vocabulary rdf:resource="http://purl.org/dc/elements/1.1/" />
+	<void:vocabulary rdf:resource="http://purl.org/dc/terms/" />
+	<void:vocabulary rdf:resource="http://purl.org/spar/doco/" />
+	<void:vocabulary rdf:resource="http://purl.org/spar/fabio/" />
+	<void:vocabulary rdf:resource="http://xmlns.com/foaf/0.1/" />
+	<void:vocabulary rdf:resource="http://purl.org/goodrelations/v1#" />
+	<void:vocabulary rdf:resource="http://annotation.semanticweb.org/iswc/iswc.daml#" />
+	<void:vocabulary rdf:resource="http://www.w3.org/2002/07/owl#" />
+	<void:vocabulary rdf:resource="http://prismstandard.org/namespaces/basic/2.1/" />
+	<void:vocabulary rdf:resource="http://purl.org/spar/pso" />
+	<void:vocabulary rdf:resource="http://purl.org/net/provenance/ns#" />
+	<void:vocabulary rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#" />
+	<void:vocabulary rdf:resource="http://www.w3.org/2000/01/rdf-schema#" />
+	<void:vocabulary rdf:resource="http://purl.org/stuff/rev#" />
+	<void:vocabulary rdf:resource="http://schema.org/" />
+	<void:vocabulary rdf:resource="http://swrc.ontoware.org/ontology#" />
+	<void:vocabulary rdf:resource="http://www.w3.org/2001/vcard-rdf/3.0#" />
+	<void:vocabulary rdf:resource="http://rdfs.org/ns/void#" />
+	<void:vocabulary rdf:resource="http://vocab.org/waive/terms/" />
+    <dcterms:license rdf:resource="http://opendatacommons.org/licenses/pddl/1.0/" />
+    <wv:norms rdf:resource="http://www.opendatacommons.org/norms/odc-by-sa/" />
+    <wv:waiver rdf:datatype="http://www.w3.org/2001/XMLSchema#string">To the extent possible under law, Leslie Sikos has waived all copyright and related or neighboring rights to this dataset.</wv:waiver>
+  </void:Dataset>
+  
+  <foaf:Person rdf:about="http://www.lesliesikos.com/datasets/sikos.rdf#sikos">
+    <rdf:type rdf:resource="http://schema.org/Person" />
+	<rdf:type rdf:resource="http://dbpedia.org/class/yago/LivingPeople" />
+	<rdf:type rdf:resource="http://dbpedia.org/resource/Computer_scientist" />
+	<rdf:type rdf:resource="http://dbpedia.org/class/yago/ComputerScientist109951070" />
+	<rdf:type rdf:resource="http://dbpedia.org/class/yago/AustralianComputerScientists" />
+	<rdf:type rdf:resource="http://dbpedia.org/resource/Web_designer" />
+	<rdf:type rdf:resource="http://dbpedia.org/resource/Technical_writer" />
+	<rdf:type rdf:resource="http://dbpedia.org/class/yago/AustralianWriters" />
+    <rdfs:label>RDF Description of Leslie Sikos</rdfs:label>
+    <foaf:primaryTopic rdf:resource="http://dbpedia.org/resource/Leslie_Sikos" />
+	<owl:sameAs rdf:resource="https://www.wikidata.org/entity/Q6531140" />
+	<owl:sameAs rdf:resource="https://www.freebase.com/m/0hzqn3k" />
+	<owl:sameAs rdf:resource="http://www.lesliesikos.com" />
+	<rdfs:seeAlso rdf:resource="http://www.lesliesikos.com/metadata/foaf.rdf"/>
+	<rdfs:seeAlso rdf:resource="http://en.wikipedia.org/wiki/Leslie_Sikos"/>	
+	<rdfs:seeAlso rdf:resource="https://www.apress.com/index.php/author/author/view/id/3609"/>
+	<rdfs:seeAlso rdf:resource="http://www.springer.com/computer/book/978-1-4302-4041-9?detailsPage=authorsAndEditors"/>
+	<rdfs:seeAlso rdf:resource="https://www.facebook.com/lesliesikos"/>
+	<rdfs:seeAlso rdf:resource="http://www.barnesandnoble.com/c/leslie-sikos"/>
+	<rdfs:seeAlso rdf:resource="http://EzineArticles.com/?expert=Leslie_F_Sikos"/>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Leslie Sikos</rdfs:label>
+	
+	<foaf:title rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Dr</foaf:title>
+	<foaf:firstname rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Leslie</foaf:firstname>
+    <foaf:surname rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Sikos</foaf:surname>
+	<foaf:gender>male</foaf:gender>
+	<foaf:logo rdf:resource="http://lesliesikos.com/img/logo.png"/>
+    <foaf:homepage rdf:resource="http://www.lesliesikos.com"/>
+	<foaf:publications rdf:resource="http://www.lesliesikos.com/publications" />
+	<foaf:based_near rdf:resource="http://dbpedia.org/resource/Adelaide" />
+	<foaf:based_near rdf:resource="http://sws.geonames.org/2078025/" />
+	<foaf:based_near rdf:resource="http://www.freebase.com/m/0mgp" />
+
+	<foaf:knows rdf:resource="http://kmi.open.ac.uk/people/maria-maleshkova.rdf" />
+	
+	<foaf:topic_interest rdf:resource="http://dbpedia.org/resource/Web_standards" />
+	<foaf:topic_interest rdf:resource="http://dbpedia.org/resource/RDF" />
+	<foaf:topic_interest rdf:resource="https://www.freebase.com/m/0f2vj" />
+	<foaf:topic_interest rdf:resource="http://dbpedia.org/resource/RDFa" />	
+	<foaf:topic_interest rdf:resource="https://www.freebase.com/m/0bw_sh" />
+	<foaf:topic_interest rdf:resource="http://dbpedia.org/resource/JSON-LD" />
+	<foaf:topic_interest rdf:resource="https://www.freebase.com/m/0hzq_55" />
+	<foaf:topic_interest rdf:resource="http://dbpedia.org/resource/Web_Ontology_Language" />
+	<foaf:topic_interest rdf:resource="https://www.freebase.com/m/01kv_h" />
+
+	<foaf:interest rdf:resource="http://dbpedia.org/resource/Electronic_organ" />	
+	<foaf:interest rdf:resource="https://www.freebase.com/m/03xq_f" />
+	<foaf:interest rdf:resource="http://dbpedia.org/resource/Road_bicycle" />	
+	<foaf:interest rdf:resource="https://www.freebase.com/m/09rgp" />
+	<foaf:interest rdf:resource="http://dbpedia.org/resource/Photography" />
+	<foaf:interest rdf:resource="https://www.freebase.com/m/05wkw" />	
+	<foaf:interest rdf:resource="http://dbpedia.org/resource/Videography" />
+	<foaf:interest rdf:resource="https://www.freebase.com/m/05kcv5" />	
+	<foaf:interest rdf:resource="http://dbpedia.org/resource/Travel" />
+	<foaf:interest rdf:resource="https://www.freebase.com/m/014dsx" />
+	<foaf:interest rdf:resource="http://dbpedia.org/resource/Literature" />
+	<foaf:interest rdf:resource="https://www.freebase.com/m/04g51" />
+	<foaf:interest rdf:resource="http://dbpedia.org/resource/Technical_writing" />
+	<foaf:interest rdf:resource="https://www.freebase.com/m/04jdv6" />
+
+	<dbpedia-owl:field rdf:resource="http://dbpedia.org/resource/Semantic_Web" />
+	<dbpedia-owl:field rdf:resource="https://www.freebase.com/m/076k0" />
+	
+	<iswc:research_topic rdf:resource="http://dbpedia.org/resource/Semantic_Web" />
+	<iswc:research_topic rdf:resource="https://www.freebase.com/m/076k0" />
+	<iswc:research_topic rdf:resource="http://dbpedia.org/resource/Knowledge_organization" />
+	<iswc:research_topic rdf:resource="https://www.freebase.com/m/02phxc9" />
+	<iswc:research_topic rdf:resource="http://dbpedia.org/resource/Knowledge_representation" />
+	<iswc:research_topic rdf:resource="http://dbpedia.org/resource/Ontology_engineering" />
+	<iswc:research_topic rdf:resource="https://www.freebase.com/m/04zvxkw" />
+	<iswc:research_topic rdf:resource="http://dbpedia.org/resource/Linked_data" />
+	<iswc:research_topic rdf:resource="https://www.freebase.com/m/02r2kb1" />
+	<iswc:research_topic rdf:resource="http://dbpedia.org/resource/Artificial_intelligence" />
+	<iswc:research_topic rdf:resource="https://www.freebase.com/m/0mkz" />
+	
+    <foaf:holdsAccount>
+      <foaf:OnlineAccount rdf:about="http://www.linkedin.com/in/sikos">
+        <foaf:accountServiceHomepage rdf:resource="http://linkedin.com" />
+        <foaf:accountName>sikos</foaf:accountName>
+      </foaf:OnlineAccount>
+    </foaf:holdsAccount>
+    <foaf:holdsAccount>
+      <foaf:OnlineAccount rdf:about="http://www.librarything.com/author/sikosleslie">
+        <foaf:accountServiceHomepage rdf:resource="http://www.librarything.com" />
+        <foaf:accountName>sikosleslie</foaf:accountName>
+      </foaf:OnlineAccount>
+    </foaf:holdsAccount>
+    <foaf:holdsAccount>
+      <foaf:OnlineAccount rdf:about="http://www.shelfari.com/authors/a1002648162/Leslie-Sikos/">
+        <foaf:accountServiceHomepage rdf:resource="http://www.shelfari.com" />
+        <foaf:accountName>Leslie-Sikos</foaf:accountName>
+      </foaf:OnlineAccount>
+    </foaf:holdsAccount>
+    <foaf:holdsAccount>
+      <foaf:OnlineAccount rdf:about="http://www.goodreads.com/user/show/6004632-leslie-sikos">
+        <foaf:accountServiceHomepage rdf:resource="http://www.goodreads.com" />
+        <foaf:accountName>leslie-sikos</foaf:accountName>
+      </foaf:OnlineAccount>
+    </foaf:holdsAccount>
+    <foaf:holdsAccount>
+      <foaf:OnlineAccount rdf:about="http://www.facebook.com/sikos">
+        <foaf:accountServiceHomepage rdf:resource="http://www.facebook.com" />
+        <foaf:accountName>sikos</foaf:accountName>
+      </foaf:OnlineAccount>
+    </foaf:holdsAccount>	
+    <foaf:holdsAccount>
+      <foaf:OnlineAccount rdf:about="http://twitter.com/LeslieSikos">
+        <foaf:accountServiceHomepage rdf:resource="http://twitter.com" />
+        <foaf:accountName>LeslieSikos</foaf:accountName>
+      </foaf:OnlineAccount>
+    </foaf:holdsAccount>
+    <foaf:holdsAccount>
+      <foaf:OnlineAccount rdf:about="http://www.youtube.com/user/LeslieSikos">
+        <foaf:accountServiceHomepage rdf:resource="http://www.youtube.com" />
+        <foaf:accountName>LeslieSikos</foaf:accountName>
+      </foaf:OnlineAccount>
+    </foaf:holdsAccount>
+	
+	<dbpedia-owl:knownFor rdf:resource="http://www.masteringhtml5css3.com" />
+	
+  </foaf:Person>
+  
+  <rdf:Description rdf:about="http://kmi.open.ac.uk/people/maria-maleshkova.rdf">
+    <foaf:knows rdf:resource="http://www.lesliesikos.com/datasets/sikos.rdf#sikos"/>
+  </rdf:Description>
+
+  <fabio:Textbook rdf:about="http://www.masteringhtml5css3.com/metadata/webstandardsbook.rdf#book">
+	<owl:sameAs rdf:resource="http://www.lesliesikos.com/datasets/sikos.rdf#webstandards2nded" />
+	<owl:sameAs rdf:resource="http://www.lesliesikos.com/web-standards-mastering-html5-css3-and-xml-second-edition/" />
+    <rdf:type rdf:resource="http://purl.org/spar/fabio/Book" />
+	<schema:author rdf:resource="http://dbpedia.org/resource/Leslie_Sikos" />
+	<dc:title>Web Standards: Mastering HTML5, CSS3, and XML</dc:title>
+	<pso:PublicationStatus>published</pso:PublicationStatus>
+	<dbpedia-owl:nonFictionSubject rdf:resource="http://dbpedia.org/resource/Web_standards" />
+	<dbpedia-owl:nonFictionSubject rdf:resource="http://dbpedia.org/resource/HTML5" />
+	<dbpedia-owl:nonFictionSubject rdf:resource="http://dbpedia.org/resource/CSS3" />
+	<dbpedia-owl:nonFictionSubject rdf:resource="http://dbpedia.org/resource/XML" />
+	<dbpedia-owl:nonFictionSubject rdf:resource="http://dbpedia.org/resource/Unicode" />
+	<dbpedia-owl:nonFictionSubject rdf:resource="http://dbpedia.org/resource/Web_typography" />
+	<dbpedia-owl:nonFictionSubject rdf:resource="http://dbpedia.org/resource/Responsive_web_design" />
+	<dbpedia-owl:nonFictionSubject rdf:resource="http://dbpedia.org/resource/Web_accessibility" />
+	<dbpedia-owl:nonFictionSubject rdf:resource="http://dbpedia.org/resource/Web_Content_Accessibility_Guidelines" />
+	<dbpedia-owl:nonFictionSubject rdf:resource="http://dbpedia.org/resource/World_Wide_Web_Consortium" />
+	<dbpedia-owl:nonFictionSubject rdf:resource="http://dbpedia.org/resource/WHATWG" />
+	<dbpedia-owl:nonFictionSubject rdf:resource="http://dbpedia.org/resource/Internet_Engineering_Task_Force" />
+	<dbpedia-owl:nonFictionSubject rdf:resource="http://dbpedia.org/resource/Ecma_International" />
+	<dbpedia-owl:nonFictionSubject rdf:resource="http://dbpedia.org/resource/Unicode_Consortium" />
+	<dbpedia-owl:nonFictionSubject rdf:resource="http://dbpedia.org/resource/Internet_Assigned_Numbers_Authority" />
+	<dbpedia-owl:nonFictionSubject rdf:resource="http://dbpedia.org/resource/International_Organization_for_Standardization" />
+	<dbpedia-owl:nonFictionSubject rdf:resource="http://dbpedia.org/resource/WebKit" />
+	<dbpedia-owl:nonFictionSubject rdf:resource="http://dbpedia.org/resource/Scalable_Vector_Graphics" />
+	<dbpedia-owl:nonFictionSubject rdf:resource="http://dbpedia.org/resource/MathML" />
+	<dbpedia-owl:nonFictionSubject rdf:resource="http://dbpedia.org/resource/Resource_Description_Framework" />
+	<dbpedia-owl:nonFictionSubject rdf:resource="http://dbpedia.org/resource/XSL" />
+	<dbpedia-owl:nonFictionSubject rdf:resource="http://dbpedia.org/resource/Javascript" />
+	<dbpedia-owl:nonFictionSubject rdf:resource="http://dbpedia.org/resource/AJAX" />
+	<dbpedia-owl:nonFictionSubject rdf:resource="http://dbpedia.org/resource/PHP" />
+	<dbpedia-owl:nonFictionSubject rdf:resource="http://dbpedia.org/resource/Semantic_Web" />
+	<dbpedia-owl:nonFictionSubject rdf:resource="http://dbpedia.org/resource/Linked_data" />
+	<dbpedia-owl:nonFictionSubject rdf:resource="http://dbpedia.org/resource/Microformat" />
+	<dbpedia-owl:nonFictionSubject rdf:resource="http://dbpedia.org/resource/RDFa" />
+	<dbpedia-owl:nonFictionSubject rdf:resource="http://dbpedia.org/resource/Web_Ontology_Language" />
+	<dbpedia-owl:nonFictionSubject rdf:resource="http://dbpedia.org/resource/Dublin_Core" />
+	<dbpedia-owl:nonFictionSubject rdf:resource="http://dbpedia.org/resource/RSS" />
+	<dbpedia-owl:nonFictionSubject rdf:resource="http://dbpedia.org/resource/YouTube" />
+	<dbpedia-owl:nonFictionSubject rdf:resource="http://dbpedia.org/resource/Google" />
+	<dbpedia-owl:nonFictionSubject rdf:resource="http://dbpedia.org/resource/Yahoo!" />
+	<dbpedia-owl:nonFictionSubject rdf:resource="http://dbpedia.org/resource/MSN" />
+	<dbpedia-owl:nonFictionSubject rdf:resource="http://dbpedia.org/resource/Notepad++" />
+	<dbpedia-owl:nonFictionSubject rdf:resource="http://dbpedia.org/resource/Adobe_Photoshop" />
+	<dbpedia-owl:nonFictionSubject rdf:resource="http://dbpedia.org/resource/Adobe_Dreamweaver" />
+	<dcterms:subject rdf:resource="http://dbpedia.org/resource/Web_standards" />
+	<dcterms:subject rdf:resource="http://dbpedia.org/resource/HTML5" />
+	<dcterms:subject rdf:resource="http://dbpedia.org/resource/CSS3" />
+	<dcterms:subject rdf:resource="http://dbpedia.org/resource/XML" />
+	<dcterms:subject rdf:resource="http://dbpedia.org/resource/Unicode" />
+	<dcterms:subject rdf:resource="http://dbpedia.org/resource/Web_typography" />
+	<dcterms:subject rdf:resource="http://dbpedia.org/resource/Responsive_web_design" />
+	<dcterms:subject rdf:resource="http://dbpedia.org/resource/Web_accessibility" />
+	<dcterms:subject rdf:resource="http://dbpedia.org/resource/Web_Content_Accessibility_Guidelines" />
+	<dcterms:subject rdf:resource="http://dbpedia.org/resource/World_Wide_Web_Consortium" />
+	<dcterms:subject rdf:resource="http://dbpedia.org/resource/WHATWG" />
+	<dcterms:subject rdf:resource="http://dbpedia.org/resource/Internet_Engineering_Task_Force" />
+	<dcterms:subject rdf:resource="http://dbpedia.org/resource/Ecma_International" />
+	<dcterms:subject rdf:resource="http://dbpedia.org/resource/Unicode_Consortium" />
+	<dcterms:subject rdf:resource="http://dbpedia.org/resource/Internet_Assigned_Numbers_Authority" />
+	<dcterms:subject rdf:resource="http://dbpedia.org/resource/International_Organization_for_Standardization" />
+	<dcterms:subject rdf:resource="http://dbpedia.org/resource/WebKit" />
+	<dcterms:subject rdf:resource="http://dbpedia.org/resource/Scalable_Vector_Graphics" />
+	<dcterms:subject rdf:resource="http://dbpedia.org/resource/MathML" />
+	<dcterms:subject rdf:resource="http://dbpedia.org/resource/Resource_Description_Framework" />
+	<dcterms:subject rdf:resource="http://dbpedia.org/resource/XSL" />
+	<dcterms:subject rdf:resource="http://dbpedia.org/resource/Javascript" />
+	<dcterms:subject rdf:resource="http://dbpedia.org/resource/AJAX" />
+	<dcterms:subject rdf:resource="http://dbpedia.org/resource/PHP" />
+	<dcterms:subject rdf:resource="http://dbpedia.org/resource/Semantic_Web" />
+	<dcterms:subject rdf:resource="http://dbpedia.org/resource/Linked_data" />
+	<dcterms:subject rdf:resource="http://dbpedia.org/resource/Microformat" />
+	<dcterms:subject rdf:resource="http://dbpedia.org/resource/RDFa" />
+	<dcterms:subject rdf:resource="http://dbpedia.org/resource/Web_Ontology_Language" />
+	<dcterms:subject rdf:resource="http://dbpedia.org/resource/Dublin_Core" />
+	<dcterms:subject rdf:resource="http://dbpedia.org/resource/RSS" />
+	<dcterms:subject rdf:resource="http://dbpedia.org/resource/YouTube" />
+	<dcterms:subject rdf:resource="http://dbpedia.org/resource/Google" />
+	<dcterms:subject rdf:resource="http://dbpedia.org/resource/Yahoo!" />
+	<dcterms:subject rdf:resource="http://dbpedia.org/resource/MSN" />
+	<dcterms:subject rdf:resource="http://dbpedia.org/resource/Notepad++" />
+	<dcterms:subject rdf:resource="http://dbpedia.org/resource/Adobe_Photoshop" />
+	<dcterms:subject rdf:resource="http://dbpedia.org/resource/Adobe_Dreamweaver" />
+	<rdfs:seeAlso rdf:resource="http://www.w3.org/TR/html5/" />
+	<rdfs:seeAlso rdf:resource="http://www.w3.org/TR/html51/" />
+	<rdfs:seeAlso rdf:resource="http://www.w3.org/TR/css3-color" />
+	<rdfs:seeAlso rdf:resource="http://www.w3.org/TR/css-fonts-3/" />
+	<rdfs:seeAlso rdf:resource="http://www.w3.org/TR/css3-mediaqueries/" />
+	<rdfs:seeAlso rdf:resource="http://www.w3.org/TR/css3-selectors/" />
+	<rdfs:seeAlso rdf:resource="http://www.w3.org/TR/turtle/" />
+	<rdfs:seeAlso rdf:resource="http://www.w3.org/TR/rdf11-concepts/" />
+	<rdfs:seeAlso rdf:resource="http://www.w3.org/standards/webdesign/i18n" />
+	<rdfs:seeAlso rdf:resource="http://www.w3.org/standards/semanticweb/data" />
+	<rdfs:seeAlso rdf:resource="http://www.w3.org/TR/2014/REC-rdf-schema-20140225/" />
+	<rdfs:seeAlso rdf:resource="http://www.w3.org/standards/xml/core" />
+	<rdfs:seeAlso rdf:resource="http://www.w3.org/TR/2006/REC-xml11-20060816" />
+	<rdfs:seeAlso rdf:resource="http://www.w3.org/TR/2009/REC-xml-names-20091208/" />
+	<rdfs:seeAlso rdf:resource="https://mozilla.org/firefox" />
+	<rdfs:seeAlso rdf:resource="http://microsoft.com/ie" />
+	<rdfs:seeAlso rdf:resource="http://www.google.com/chrome" />
+	<dc:date>2014-12-17</dc:date>
+	<dc:publisher rdf:resource="http://dbpedia.org/resource/Apress" />
+	<schema:editor>Welmoed Spahr</schema:editor>
+	<schema:editor>Ben Renow-Clarke</schema:editor>
+	<schema:editor>
+		<foaf:person>
+			<foaf:name>Charles Brown</foaf:name>
+			<foaf:homepage rdf:resource="http://www.charlesebrown.net" />
+		</foaf:person>
+	</schema:editor>
+	<schema:editor>Christine Ricketts</schema:editor>
+	<schema:editor>Linda Seifert</schema:editor>
+	<schema:illustrator>
+		<foaf:person>
+			<foaf:name>Anna Ishchenko</foaf:name>
+			<foaf:holdsAccount>
+			  <foaf:OnlineAccount rdf:about="http://www.linkedin.com/pub/anna-ishchenko/86/b3a/625">
+				<foaf:accountServiceHomepage rdf:resource="http://linkedin.com" />
+				<foaf:accountName>anna-ishchenko/86/b3a/625</foaf:accountName>
+			  </foaf:OnlineAccount>
+			</foaf:holdsAccount>
+		</foaf:person>
+	</schema:illustrator>
+	<schema:bookFormat>Paperback</schema:bookFormat>
+	<dc:format>Paperback</dc:format>
+	<schema:genre>Textbook</schema:genre>
+	<schema:about>Web design</schema:about>
+	<schema:inLanguage>English</schema:inLanguage>	
+	<schema:numberOfPages>524</schema:numberOfPages>
+	<gr:hasEAN_UCC-13 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">9781484208847</gr:hasEAN_UCC-13>
+	<doco:colophon>Distributed to the book trade worldwide by Springer Science+Business Media, LLC., 233 Spring Street, 6th Floor, New York, NY 10013. Phone 1-800-SPRINGER, fax (201) 348-4505, e-mail orders-ny@springer-sbm.com, or visit www.springeronline.com.</doco:colophon>
+	<doco:preface>Since its earliest stage in the 1990s, the Web has been attracting all kinds of content authors. Anybody with minimal know-how could publish web sites from anywhere, anytime. This easy access has allowed millions of web sites to appear on the “network of networks” without any kind of content review or censorship. However, the freedom to publish without limitations led to low quality code and poor copywriting on many sites. Online presence is increasingly important in the competitive market, but often people are unware of the costs of web design and hosting. To keep expenses down, many try to launch and maintain a web site on their own, and are reluctant to pay for professional web design services. Such people are usually not familiar with the principles of web design, typography, color theory, or web standards, and do not have graphic design and programming skills either. Those who use a Content Management System to develop web sites often believe that there is no need for qualified professionals anymore in web design. However, while a Graphical User Interface and predefined templates are easy to use, the quality of software-generated code cannot compete with the markup and style sheets written by professional web designers. In fact, web authoring and development tools often generate codes that are not standard-compliant, longer and more complex than optimal, not well-structured, lack semantics, and are inaccessible to people with disabilities. Even if the code is standard-complaint, content authors without solid web design skills update the markup incorrectly, resulting in web sites that will violate web standards. To ensure acceptable download speed, rendering, and functionality for poorly written web sites, browsers are extremely error tolerant and can ignore incorrect code blocks, handle missing end tags, and so on. This error tolerancy doesn’t mean that web standards can be ignored! For more than a decade, the inconsistent appearance and behavior across various browsers was a real challenge, and often frustration, for web designers, a problem laypeople never understood. Even standard-compliant sites fell apart or rendered incorrectly under various browsers that did not support a particular markup element or style sheet property. Browser vendors eventually recognized the importance of standards, and gradually improved their products. In the early 2010s, modern browsers reached an acceptable (and constantly improving) level of web standards support, and creating robust web sites became almost exclusively the responsibility of web designers. From the standardization point of view, it is not an exaggeration that most web sites—including the largest, frequently updated multi-million dollar portals—often apply obsolete technologies and bad practices, and are not optimal. Common web design practices take just a few basic principles into account, such as appearance, buzzwords, and marketing potential, while miss important factors such as document structure, properly implemented standards, user interface, user experience, and accessibility. Web designers often publish incorrect templates based on popular, emerging technologies that are not yet standardized to increase their web site traffic, and others distribute such code blocks on other sites, leading to invalid markup and style sheets. Also, there are people who keep using the same technologies, techniques, and practices for as long as possible even if better technologies and new trends appear. Unfortunately, the proper implementation of web standards is quite often a minor concern only. The growing popularity of mobile browsing has led to a huge demand for mobile-friendly web sites. As a result, supporting smartphones, tablets, and high-resolution monitors became a standard user expectation. How can web designers create web sites that work perfectly on all these devices when they come with different screen size, resolution, aspect ratio, and scrollability? The answer to this question led to a paradigm shift in the web design industry called Responsive Web Design that provides an optimal viewing experience regardless of the browsing device. Responsive Web Design is based on earlier best practices such as progressive enhancement (which was a result of the even earlier approach, graceful degradation). Practical problems are often solved by the web design community, often in the form of a new technique or framework. The approaches and software tools that are really efficient become so popular that they are implemented globally and designers start considering them as best practices. However, there is no ultimate solution for web design problems. For example, how can machine-readable annotations be leveraged in modern web services? How can web site appearance and functionality be guaranteed on a variety of platforms? How can the length of the markup and styling rules be minimized while preserving site information, functionality, and behavior? How can correct character rendering be ensured on a multilingual site? Global concerns can often be addressed by the implementation of web standards. Since the development process of technical specifications can be slow, years can pass between the initial idea, the standard release, and the practical applications. Implementing specifications that are not yet standardized is usually a bad practice, but sometimes inevitable, especially when the standard under development is shaped by the feedback from the web design community. Users usually do not know that many web site inconsistencies, unreadable elements, and poor functionality are caused by the low quality markup and style sheets that do not comply with web standards. Standard compliance provides backward-and forward-compatibility so web sites can be used on the widest ranges of browsers, including older, current, and future versions, and will be easy to update when new standards appear. Web standards contribute to interoperability, platform-, device- and resolution-independence so standards-based web sites are easy to use and provide excellent user experience regardless of the screen size or resolution, operating system, and browser. Correctly structured markup is a fundamental requirement for accessibility and machine-readable, semantic annotations, and also insures that the information of your site is conveyed even if the style sheets cannot be loaded. This book is a comprehensive collection of state-of-the-art information on both the core web standards and lesser-known standards that deserve more attention. In fact, it is written to be the most complete reference of web standardization resources ever published. The step by-step guides are based on solid theoretical design principles and standardized specifications, and are demonstrated through sample code while focusing on syntax, formal grammar, recommended annotations, and other standardization concerns. This book also introduces you to cutting edge technologies and best practices that can be implemented in modern web sites to achieve mobile-friendliness, accessibility, machine-readability, and usability through standards compliance.</doco:preface>
+	<schema:description>Web Standards: Mastering HTML5, CSS3, and XML provides solutions to the most common web design problems, and gives you a deep understanding of web standards and how they can be implemented to improve your web sites. You will learn how to develop fully standards-compliant, mobile-friendly, and search engine-optimized web sites that are robust, fast, and easy to update while providing excellent user experience and interoperability. The book covers all major web standards for markup, style sheets, web typography, web syndication, semantic annotations, and accessibility. This edition has been fully updated with the latest in web standards, including the finalized HTML5 vocabulary and the full list of CSS3 properties.</schema:description>
+	<schema:image>http://www.masteringhtml5css3.com/img/webstandardsbook.jpg</schema:image>
+	<schema:url>http://www.masteringhtml5css3.com</schema:url>
+	<owl:sameAs rdf:resource="http://www.webstandardbooks.com" />
+	<rdfs:seeAlso rdf:resource="http://www.lesliesikos.com/web-design-books/" />
+  </fabio:Textbook>
+  
+  <rdf:Description rdf:about="http://dbpedia.org/resource/W3C">
+    <foaf:member rdf:resource="http://www.lesliesikos.com/datasets/sikos.rdf#sikos" />
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://dbpedia.org/resource/Internet_Engineering_Task_Force">
+    <foaf:member rdf:resource="http://www.lesliesikos.com/datasets/sikos.rdf#sikos" />
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://dbpedia.org/resource/Wikipedia">
+    <foaf:member rdf:resource="http://www.lesliesikos.com/datasets/sikos.rdf#sikos" />
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://dbpedia.org/resource/Internet_Society">
+    <foaf:member rdf:resource="http://www.lesliesikos.com/datasets/sikos.rdf#sikos" />
+  </rdf:Description>  
+
+  <rdf:Description rdf:about="http://dbpedia.org/resource/Unicode_Consortium">
+    <foaf:member rdf:resource="http://www.lesliesikos.com/datasets/sikos.rdf#sikos" />
+  </rdf:Description>
+ 
+</rdf:RDF>

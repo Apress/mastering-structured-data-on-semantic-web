@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rdf:RDF
+	xmlns:foaf="http://xmlns.com/foaf/0.1/"
+	xmlns:contact="http://www.w3.org/2000/10/swap/pim/contact#" 
+	xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+>
+  <foaf:person rdf:about="http://www.lesliesikos.com/datasets/sikos.rdf#sikos">
+    <foaf:name>Leslie Sikos</foaf:name>
+    <foaf:based_near rdf:resource="http://dbpedia.org/resource/Adelaide" />
+    <foaf:topic_interest rdf:resource="http://dbpedia.org/resource/Web_standards" />
+    <contact:nearestAirport rdf:resource="http://dbpedia.org/resource/Adelaide_Airport" />
+  </foaf:person>
+  <rdf:Description rdf:about="http://dbpedia.org/resource/W3C">
+    <foaf:member rdf:resource="http://www.lesliesikos.com/datasets/sikos.rdf#sikos" />
+  </rdf:Description>
+</rdf:RDF>

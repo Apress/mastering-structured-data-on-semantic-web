@@ -1,0 +1,9 @@
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+<http://www.masteringhtml5css3.com> 
+    rdfs:label "RDF Description of the web design book Web Standards" ;
+    dcterms:title "Web Standards: Mastering HTML5, CSS3, and XML" ;
+    rdfs:comment "Web Standards: Mastering HTML5, CSS3, and XML presents step-by-step guides based on solid design principles and best practices, and shows the most common web development tools and web design frameworks. You will master HTML5 and its XML serialization, XHTML5, the new structuring and multimedia elements, the most important HTML5 APIs, and understand the standardization process of HTML 5.1, HTML 5.2, and future HTML5 versions. " ;
+    rdfs:seeAlso <http://www.lesliesikos.com/web-design-books/> .

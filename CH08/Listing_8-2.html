@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<title>JSON-LD Annotation Example</title>
+		
+		<script type="application/ld+json">
+		  {
+			"@context": "http://schema.org",
+			"@type": "Book",
+			"url": "http://www.lesliesikos.com/web-standards-mastering-html5-css3-and-xml-second-edition/",
+			"author": "http://dbpedia.org/resource/Leslie_Sikos",
+			"bookFormat": "http://schema.org/Paperback",
+			"bookFormat": "http://schema.org/EBook",	  
+			"datePublished": "2014-12-24",
+			"image": "http://www.lesliesikos.com/img/web-design-book.jpg",
+			"inLanguage": "English",
+			"isbn": "1484208846",
+			"name": "Web Standards: Mastering HTML5, CSS3, and XML",
+			"numberOfPages": "524",
+			"offers": {
+			  "@type": "Offer",
+			  "availability": "http://schema.org/InStock",
+			   "price": "39.89",
+			   "priceCurrency": "USD"
+			  },
+			"publisher": "http://dbpedia.org/resource/Apress",
+			"about": "http://dbpedia.org/resource/Web_design"	
+		  }
+		</script>
+
+	</head>
+	<body>
+		<p>
+		Listing 8-2. A Product Description Annotated with JSON-LD
+		</p>
+	</body>
+</html>

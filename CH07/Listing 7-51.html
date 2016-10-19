@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
+  </head>
+  <body>
+    <script type="text/javascript">
+      var siteDomain = "example.com";
+      var query = "SELECT * WHERE {?s ?p ?o} LIMIT 10";
+      var url = "http://" + siteDomain + "/sparql.json?query=";
+      url += encodeURIComponent(query);
+      $.ajax({
+      dataType: 'json',
+      url: url,
+      success: function(data) {
+        alert('success: ' + data.results.bindings.length + ' results');
+        console.log(data);
+        }
+      });
+    </script>
+  </body>
+</html>

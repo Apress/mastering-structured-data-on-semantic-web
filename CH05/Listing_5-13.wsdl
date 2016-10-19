@@ -1,0 +1,39 @@
+<wsdl:description
+  targetNamespace="http://www.example.com/wsdl/order#"
+  xmlns="http://www.w3.org/2002/ws/sawsdl/spec/wsdl/order#"
+  xmlns:wsdl="http://www.w3.org/ns/wsdl"
+  xmlns:xs="http://www.w3.org/2001/XMLSchema"
+  xmlns:sawsdl="http://www.w3.org/ns/sawsdl">
+  <wsdl:types>
+    <xs:schema targetNamespace="http://www.example.com/wsdl/order#" elementFormDefault="qualified">
+      <xs:element name="OrderRequest" sawsdl:modelReference="http://example.com/purchaseorder#OrderRequest" sawsdl:loweringSchemaMapping="http://www.example.com/mapping/lower.xml">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element name="customerNo" type="xs:integer" />
+            <xs:element name="orderItem" type="item" minOccurs="1" maxOccurs="unbounded" />
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:complexType name="item">
+        <xs:all>
+          <xs:element name="UPC" type="xs:string" />
+        </xs:all>
+        <xs:attribute name="quantity" type="xs:integer" />
+      </xs:complexType>
+      <xs:element name="OrderResponse" type="confirmation" />
+      <xs:simpleType name="confirmation" sawsdl:modelReference="http://www.example.com/purchaseorder#OrderConfirmation">
+        <xs:restriction base="xs:string">
+          <xs:enumeration value="Confirmed" />
+          <xs:enumeration value="Pending" />
+          <xs:enumeration value="Rejected" />
+        </xs:restriction>
+      </xs:simpleType>
+    </xs:schema>
+  </wsdl:types>
+  <wsdl:interface name="Order" sawsdl:modelReference="http://example.com/textbooks">
+    <wsdl:operation name="order" pattern="http://www.w3.org/ns/wsdl/in-out" sawsdl:modelReference="http://www.example.com/purchaseorder#RequestPurchaseOrder">
+      <wsdl:input element="OrderRequest" />
+      <wsdl:output element="OrderResponse" />
+    </wsdl:operation>
+  </wsdl:interface>
+</wsdl:description>

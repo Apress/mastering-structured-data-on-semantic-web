@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<title>JSON-LD Annotation Example</title>
+		
+		<script type="application/ld+json">
+		{
+		  "@context": {
+			"gr": "http://purl.org/goodrelations/v1#",
+			"pto": "http://www.productontology.org/id/",
+			"schema": "http://schema.org/",
+			"xsd": "http://www.w3.org/2001/XMLSchema#",
+			"schema:url": {
+			  "@type": "@id"
+			},
+			"gr:acceptedPaymentMethods": {
+			  "@type": "@id"
+			},
+			"gr:hasBusinessFunction": {
+			  "@type": "@id"
+			},
+			"gr:hasCurrencyValue": {
+			  "@type": "xsd:float"
+			}
+		  },
+		  "@id": "http://www.ebay.com/itm/ExampleAd-Giant-TCR-Advanced-1-Road-Bike-/21621444051",
+		  "@type": "gr:Offering",
+		  "gr:acceptedPaymentMethods": "gr:Cash",
+		  "gr:description": "Want to sell my Giant TCR Advanced 1 Road Bike as I’m moving interstate",
+		  "gr:hasBusinessFunction": "gr:Sell",
+		  "gr:hasPriceSpecification": {
+			"gr:hasCurrency": "USD",
+			"gr:hasCurrencyValue": "1350"
+		  },
+		  "gr:includes": {
+			"@type": [
+			  "gr:Individual",
+			  "pto:Racing_bicycle"
+			],
+			"gr:name": "Giant TCR Advanced 1",
+			"schema:url": "https://www.giant-bicycles.com/en-us/bikes/model/tcr.advanced.1.force/14797/66271/"
+		  },
+		  "gr:name": "Used Giant Road Bike"
+		}
+		</script>
+
+	</head>
+	<body>
+		<p>
+		Listing 8-3. JSON-LD Annotation of a Product Offering in the Markup
+		</p>
+	</body>
+</html>

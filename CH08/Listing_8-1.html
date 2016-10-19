@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<title>JSON-LD Annotation Example</title>
+		
+		<script type="application/ld+json">
+		  {
+			"@context"  : "http://schema.org",
+			"@type"     : "MusicEvent",
+			"name"      : "Nice Band Live",
+			"startDate" : "2015-09-18T20:00",
+			"url"       : "http://www.nicebandexample.com/tour/150918",
+			"location"  : {
+							"@type"   : "Place",
+							"name"    : "The Oval",
+							"address" : "1234 Blackwood Plaza",
+							"sameAs"  : "http://www.xyzoval.com"
+						  },
+			"performer" : {
+							"@type"   : "MusicGroup",
+							"name"    : "Nice Band",
+							"sameAs"  : "http://www.nicebandexample.com "
+						  },
+			"offers"   : {
+						   "@type" : "Offer",
+						   "url"   : "http://www.exampleticketseller.com"
+						 }
+		  }
+		</script>
+
+	</head>
+	<body>
+		<p>
+		Listing 8-1. JSON-LD Annotation in the Markup of a Band
+		</p>
+	</body>
+</html>

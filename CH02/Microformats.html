@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<title>Microformats</title>
+		<link rel="profile" href="http://microformats.org/profile/hcalendar" />
+		<link rel="profile" href="http://microformats.org/profile/hcard" />
+		<link rel="profile" href="http://microformats.org/profile/rel-nofollow" />
+		<link rel="profile" href="http://gmpg.org/xfn/11" />
+		<style type="text/css">		
+		/* Listing 2-19. Styling XFN */
+		
+		a[rel~="friend"] {
+		  font-weight: bold;
+		}
+		</style>
+	</head>
+	<body>
+	
+		<!-- Listing 2-9. A Three-Day Conference Represented in hCalendar -->
+	
+		<div class="vevent">
+		  <h1 class="summary">Semantic Web Conference ’15</h1>
+		  <div class="description">Semantic Web Conference 2015 was announced yesterday.</div>
+		  <div>Posted on: <abbr class="dtstamp" title="20150825T080000Z">Aug 25, 2015</abbr></div>
+		  <div class="uid">uid1@host.com</div>
+		  <div>Organized by: <a class="organizer" href="mailto:js@expl.com">js@expl.com</a></div>
+		  <div>Dates: <abbr class="dtstart" title="20151012T093000Z">October 12 2015, 9.30am
+		   UTC</abbr> – <abbr class="dtend" title="20151014T200000Z">October 14 2015, 8.00pm
+		   UTC</abbr></div>
+		  <div>Status: <span class="status">Confirmed</span></div>
+		  <div>Filed under:</div>
+		  <ul>
+			<li class="category">Conference</li>
+		  </ul>
+		</div>
+		
+		<!-- Listing 2-10. A Three-Day Conference annotated using h-event -->
+		
+		<div class="h-event">
+		  <h1 class="p-name"> Semantic Web Conference ’15</h1>
+		  <p>From 
+			<time class="dt-start" datetime="2015-10-12 09:30">12<sup>th</sup> October 2015, 9:30am</time>
+			to <time class="dt-end" datetime="2015-10-14 20:00">14<sup>th</sup> October 2015, 8:00pm</time>
+			at <span class="p-location">Nice Conference Hall</span></p>
+		  <p class="p-summary">Semantic Web Conference 2015 was announced yesterday.</p>
+		</div>
+		
+		
+		<!-- Listing 2-11. A Typical hCard -->
+		
+		<div id="hcard-John-Smith" class="vcard">
+		  <img src="http://www.example.com/jsmith.jpg" alt="Photo of John Smith" class="photo" />
+		  <a class="url fn" href="http://www.example.com">John Smith</a>
+		  <div class="org">Smith and Sons</div>
+		  <a class="email" href="mailto:smith@example.com">smith@example.com</a>
+		  <div class="adr">
+			<div class="street-address">123 Nice Street</div>
+			<span class="locality">Adelaide</span>, 
+			<span class="region">SA</span>, 
+			<span class="postal-code">5000</span>
+			<span class="country-name">Australia</span>
+		  </div>
+		  <div class="tel">+61812345678</div>
+		</div>
+
+		<!-- Listing 2-12. A Combination of hReview and hCard -->
+		
+		<div class="hreview">
+		  <h1 class="summary">The Winner Takes It All Review</h1>
+		  <span class="reviewer vcard">
+		  by <span class="fn">John Smith</span>, <span class="title">Editor</span>
+		  at <span class="org">Consumer Reviews</span>
+		  </span>
+		  Rating: <span class="rating">4.5</span> out of 5.
+		  <span class="description">A fascinating performance.</span>
+		</div>
+
+		<!-- Listing 2-15. A Link that will be not considered by Search Engines while Indexing a Page -->
+		
+		<a href="http://www.lowprsite.com" rel="nofollow">Low PR site</a>
+
+		<!-- Listing 2-18. Link to the Web Site of a Friend -->
+		
+		I am an old friend of <a href="http://lesliesikos.com" rel="friend met">Leslie Sikos</a>.
+		
+		<!-- Listing 2-22. A Complete XMDP Example -->
+		
+		<dl class="profile">
+		  <dt id="author">author</dt>
+		  <dd>A person who wrote (at least part of) the document.</dd>
+		  <dt id="keywords">keywords</dt>
+		  <dd>A comma and/or space separated list of the keywords or keyphrases of the document.</dd>
+		</dl>	
+		
+	</body>
+</html>

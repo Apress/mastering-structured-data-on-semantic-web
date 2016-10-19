@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" prefix="xsd: http://www.w3.org/2001/XMLSchema# dc: http://purl.org/dc/terms/">
+	<head>
+		<meta charset="UTF-8" />
+		<title>RDFa</title>
+	</head>
+	<body>
+
+		<!-- Listing 2-26 -->
+		
+		<h1 property="dc:title">Leslie’s Blog</h1>
+		<p>
+		   Last modified: <span property="dc:modified" content="2015-02-19T10:49:00-10:49" datatype="xsd:dateTime">19 February 2015</span>.
+		</p>
+	
+		<!-- Listing 2-25. Using the Term “textbook” from the FaBiO Ontology -->
+	
+		<p vocab="http://schema.org/" typeof="Person" prefix="fabio: http://purl.org/spar/fabio/" resource="#sikos">
+		  My name is <span property="name">Leslie Sikos</span> and you can find out more about me by visiting <a property="url" href="http://www.lesliesikos.com">my web site</a>. I am the author of <a property="fabio:Textbook" href="http://lesliesikos.com/mastering-structured-data-on-the-semantic-web/">Mastering Structured Data on the Semantic Web</a>.
+		</p>
+
+		<!-- Listing 2-27. Describing the Relationship between two Resources in RDFa -->
+
+		This document is licensed under the <a prefix="cc: http://creativecommons.org/ns#" rel="cc:license" href="http://creativecommons.org/licenses/by-nc-nd/3.0/">Creative Commons By-NC-ND License</a>.
+
+		<!-- Listing 2-30. Using the inlist Attribute -->
+
+		<p prefix="bibo: http://purl.org/ontology/bibo/ dc: http://purl.org/dc/terms/" typeof="bibo:Website">
+		  The web site “<span property="dc:title">Andrew Peno Graphic and Fine Artist</span>” was created and is maintained by <a inlist="" property="dc:creator" href="http://www.andrewpeno.com">Andrew Peno</a> and <a inlist="" property="dc:creator" href="http://www.lesliesikos.com">Leslie Sikos</a>. 
+		</p>
+
+	</body>
+</html>
